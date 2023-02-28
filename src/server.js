@@ -16,6 +16,9 @@ const server = express();
 server
   .use(cors())
   .use(express.json())
+  .use("/", (req, res) => {
+    return res.sendStatus(200);
+  })
   .use(likeRouter)
   .use(authRouter)
   .use(postsRouter)
@@ -23,10 +26,6 @@ server
   .use(trendingRouter)
   .use(userRouter)
   .use(commentsRouter);
-
-server.get("/", (req, res) => {
-  return res.sendStatus(200);
-});
 
 server.listen(process.env.PORT, () =>
   console.log("Listening on port " + process.env.PORT)

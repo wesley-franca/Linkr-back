@@ -16,7 +16,7 @@ Search for friends
 To install Linkr, simply clone the GitHub repository to your local machine:
 
 ```bash
-git clone https://github.com/wesley-franca/Linkr-back.gitt
+git clone https://github.com/wesley-franca/Linkr-back.git
 ```
 
 Then, navigate to the linkr directory and install the required packages using npm:
